@@ -2,14 +2,13 @@
 
 In this section, we'll look at a credit card fraud detection dataset, and build a binary classification model that can identify transactions as either fraudulent or valid, based on provided, historical data. In a 2016 study, it was estimated that credit card fraud was responsible for over 20 billion dollars in loss, worldwide. Accurately detecting cases of fraud is an ongoing area of research.
 
-## Getting Started
+## General Outline
 
-### General Outline
-## Labeled Data
+### Labeled Data
 
 The payment fraud data set (Dal Pozzolo et al. 2015) was downloaded from Kaggle. This has features and labels for thousands of credit card transactions, each of which is labeled as fraudulent or valid. In this notebook, we'd like to train a model based on the features of these transactions so that we can predict risky or fraudulent transactions in the future.
 
-## Binary Classification
+### Binary Classification
 
 Since we have true labels to aim for, we'll take a supervised learning approach and train a binary classifier to sort data into one of our two transaction classes: fraudulent or valid. We'll train a model on training data and see how well it generalizes on some test data.
 
@@ -31,7 +30,7 @@ Managing class imbalance, which is when we have many more training examples in o
 
 For this project, the smallest GPU instance available when using SageMaker is the ml.t2.medium instance and it is perfectly adequate for completing the project.
 
-### Modeling
+## Modeling
 
 A LinearLearner has two main applications:
 
